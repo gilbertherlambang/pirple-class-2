@@ -1,0 +1,20 @@
+//var
+        var jancuk: Int = 28
+        jancuk = 29
+        var uangkuh: Float = 500f
+        var cowo: Boolean = false
+        var sword: Char = 'p'
+        var firstName: String = "Andi"
+
+        //operations
+        var cewe: Boolean = !cowo
+        var uangmuh: Float = uangkuh - 25.8f
+        var moduang = uangkuh % 5
+        var apakah: Boolean = firstName is String
+        var hebat: String = firstName + "Anying"
+        var stringkikidoyuoloveme: String = jancuk.toString()
+
+        //nullables
+        var lastName: String? = "Narang"
+        var length: Int? = lastName?.length
+        //var length: Int = lastName!!.length

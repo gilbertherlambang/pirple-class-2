@@ -1,0 +1,22 @@
+//arr
+        // non-mutable lists, arrays
+        // var name = listof<type>(var1,var2,...)
+
+        var weekdays = listOf<String>("Monday","Tuesday","Wednesday")
+        weekdays.get(4)
+        weekdays[4]
+        weekdays[3]
+        weekdays = listOf("")
+
+        var trueOrFalseAnswerKey = arrayOf(false, true, true, false, false)
+        trueOrFalseAnswerKey.set(2, false)
+        trueOrFalseAnswerKey[2] = false
+
+        //Mutable lists and arrays
+        var roster = mutableListOf<String>("Andi","Ancuk","Pret")
+        roster.add("Cindy")
+        var andi: String = roster.removeAt(0)
+
+        var bread: String = "busuk"
+        var shoppinglist = arrayListOf<String>("telor","indomie","bakso")
+        shoppinglist.add(0,bread)

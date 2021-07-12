@@ -1,0 +1,42 @@
+//if (condition to test) {execute code if true}
+
+        var isDoorOpen: Boolean = false
+        var isDoorLocked: Boolean = true
+        var doesHaveKey: Boolean = true
+        var action: String = ""
+
+        if (isDoorOpen == true && doesHaveKey == false){
+            action = "leave"
+        }else if (isDoorOpen == false) {
+            action = "get back later"
+        }else {
+            action = "yaudala"
+        }
+
+        action = if (isDoorOpen == true) "enter" else "get out"
+
+        //when statement and expressions
+        when (isDoorOpen){
+            true -> action = "Enter"
+            false -> action = "Leave"
+            else -> {}
+        }
+
+        //While loops
+        //whilte (condition to test){ code to execute if condition returns true}
+        var current: Int = 1
+        var max: Int = 100
+        var total: Int = 0
+        while(current <= 100){
+            total += current
+            current += 1
+        }
+
+        //for in loops
+        var roster = listOf<String>("Nadiem", "Tanu", "jancuk")
+        var nameString : String = ""
+
+        for (name in roster){
+            Log.d("mainActivity",name)
+            nameString += name + ""
+        }

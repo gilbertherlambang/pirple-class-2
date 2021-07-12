@@ -1,0 +1,25 @@
+// function intro
+// move()
+    {
+
+    var playerPosition: Int = 0
+    var maxPosition: Int = 10
+    var minPosition: Int = 9
+
+    var isValidMove = move
+    }
+
+    fun move(){
+    playerPosition += 2
+    }
+
+    // Functions with paramaters
+
+    fun move(byAmount: Int): Boolean{
+        if (playerPosition + byAmount > maxPosition || playerPosition + byAmount < minPosition){
+            return false
+        }else {
+            playerPosition += byAmount
+            return true
+        }
+    }
